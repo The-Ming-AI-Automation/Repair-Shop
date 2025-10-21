@@ -1,0 +1,83 @@
+<!-- ====== CASE STUDY SECTION ====== -->
+<section id="case-studies">
+  <h2 class="section-title">AI Automation Case Studies</h2>
+
+  <!-- 1. REPAIR SHOP / GYM -->
+  <div class="case-card fade-slide">
+    <img src="repairshop.jpg" alt="Repair Shop Automation" class="case-image" />
+    <div class="case-content">
+      <h3>Automated Booking & Feedback System</h3>
+      <p class="industry">Industry: Repair Shop / Gym</p>
+      <p class="description">
+        Built a full automation for local service businesses — allowing customers to
+        book, receive instant confirmations, smart reminders, and follow-up review requests.
+        All handled automatically through AI + workflow tools.
+      </p>
+      <ul class="tools">
+        <li>🧩 Tools: Google Forms, n8n, Gmail, Vapi</li>
+        <li>💡 Key Outcome: 90% booking confirmations automated, zero manual follow-ups</li>
+      </ul>
+      <div class="buttons">
+        <a href="#" class="btn btn-live">View Live Demo</a>
+        <a href="#" class="btn btn-code">View GitHub Source</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- 2. E-COMMERCE -->
+  <div class="case-card reverse fade-slide">
+    <img src="ecommerce.jpg" alt="E-commerce Automation" class="case-image" />
+    <div class="case-content">
+      <h3>AI Lead-to-Purchase Conversion Flow</h3>
+      <p class="industry">Industry: E-Commerce</p>
+      <p class="description">
+        Created an automation to recover abandoned carts, send AI-personalized follow-up emails,
+        and request reviews after purchase. Simulates a GoHighLevel-style lead nurture system.
+      </p>
+      <ul class="tools">
+        <li>🧩 Tools: Zapier, Google Sheets, Gmail, OpenAI API</li>
+        <li>💡 Key Outcome: 12% cart recovery, 22% more customer feedback collected</li>
+      </ul>
+      <div class="buttons">
+        <a href="#" class="btn btn-live">View Live Demo</a>
+        <a href="#" class="btn btn-code">View GitHub Source</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- 3. REAL ESTATE -->
+  <div class="case-card fade-slide">
+    <img src="realestate.jpg" alt="Real Estate Automation" class="case-image" />
+    <div class="case-content">
+      <h3>AI Lead Qualifier & Appointment Scheduler</h3>
+      <p class="industry">Industry: Real Estate</p>
+      <p class="description">
+        Automated a real estate agent’s entire client funnel — AI instantly responds to new inquiries,
+        qualifies leads, and syncs confirmed appointments to Google Calendar automatically.
+      </p>
+      <ul class="tools">
+        <li>🧩 Tools: Google Forms, Zapier, Gmail, Google Calendar, OpenAI API</li>
+        <li>💡 Key Outcome: 28% faster appointments, 40% less manual admin</li>
+      </ul>
+      <div class="buttons">
+        <a href="#" class="btn btn-live">View Live Demo</a>
+        <a href="#" class="btn btn-code">View GitHub Source</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="center-btn">
+    <a href="#contact" class="btn btn-viewall">View All Projects</a>
+  </div>
+</section>
+
+<!-- ====== SCROLL ANIMATION JS ====== -->
+<script>
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) entry.target.classList.add('visible');
+    });
+  }, { threshold: 0.2 });
+
+  document.querySelectorAll('.fade-slide').forEach(el => observer.observe(el));
+</script>
